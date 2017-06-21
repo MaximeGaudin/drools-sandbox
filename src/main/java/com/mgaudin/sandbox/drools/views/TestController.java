@@ -18,7 +18,7 @@ public class TestController {
 
     @GetMapping("/test/newLead")
     public String simulateNewLead() {
-        ruleEngineManager.process2(new Lead("PROJET"));
+        ruleEngineManager.process(new Lead("PROJET"));
         return "redirect:/rules";
     }
 }
