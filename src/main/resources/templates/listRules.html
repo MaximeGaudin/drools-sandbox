@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Gestion des règles</h1>
+
+<h2>Règles existantes :</h2>
+<ul>
+    {{#rules}}
+    <li><a href="/rules/{{id}}">{{name}}</a></li>
+    {{/rules}}
+</ul>
+
+<p>
+    <a href="/rules/add">Ajouter une règle</a>
+</p>
+
+<p>
+    <a href="/test/newLead">Simuler un nouveau lead</a>
+</p>
+
+</body>
+</html>

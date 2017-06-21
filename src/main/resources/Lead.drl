@@ -1,0 +1,11 @@
+package com.mgaudin.sandbox.drools.rules;
+
+import com.mgaudin.sandbox.drools.models.Lead;
+import com.mgaudin.sandbox.drools.models.Employee;
+
+rule "Lead" salience 10
+    when
+        $l : Employee(filter==false)
+    then
+        System.out.println("Hello !");
+end
